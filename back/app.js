@@ -8,7 +8,7 @@ const apiKey = `https://rickandmortyapi.com/api/character`;
 app.use(cors());
 
 app.get('/characters', async (req, res) => {
-    const { page = 1, name } = req.query;
+    const { name } = req.query;
     let url = `${apiKey}`;
 
     if (name) {
