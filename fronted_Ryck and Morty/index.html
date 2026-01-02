@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rick and Morty</h1>        
+    </header>
+
+    <div class="buscar">
+        <label for="buscador" id="name">Buscador</label>
+        <input type="text" id="buscador" placeholder="Ingresa el nombre" required>
+        <button id="btn_personaje" class="obtener" onclick="buscadorName()">Obtener personaje</button>
+    </div>
+
+    <main>
+        <div id="container" class="container"></div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
